@@ -1,9 +1,9 @@
 def how_many(animals):
-    count = 0
+    counter = 0
     for item in animals.values():
-        count += len(item)
+        counter += len(item)
 
-    return count
+    return counter
 
 
 def main():
