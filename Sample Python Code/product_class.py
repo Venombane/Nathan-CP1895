@@ -5,10 +5,10 @@ class Product:
         self.discount_percent = discount_percent
 
     def getDiscountAmount(self):
-        return round(self.price * (self.discount_percent / 100), 2)
+        return round(self.price - self.getDiscountPrice(), 2)
 
     def getDiscountPrice(self):
-        return round(self.price - self.getDiscountAmount(), 2)
+        return round(self.price * (self.discount_percent / 100), 2)
 
 
 product1 = Product('Stanley 13 Ounce Wood Hammer', 12.99, 62)
