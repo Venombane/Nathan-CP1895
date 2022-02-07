@@ -6,6 +6,9 @@ class Product:
     name: str
     discountPercent: float
 
+    def getPrice(self):
+        return self.__price
+
     def getDiscountAmount(self):
         return self.__price * (self.discountPercent / 100)
 
